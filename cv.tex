@@ -84,7 +84,7 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[backend=bibtex,style=authoryear,sorting=ynt,maxbibnames=5]{biblatex}
+\usepackage[backend=bibtex,style=authoryear,sorting=ydnt,maxbibnames=5]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -202,6 +202,15 @@
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications and Preprints}\label{sec:publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+%----------------------------------------------------------------------------------------
 %	RESEARCH
 %----------------------------------------------------------------------------------------
 \section{Research Experience} % Don't put a space between each environment!
@@ -262,7 +271,18 @@
 %     \item Developed Mathematica code to numerically solve the time-independent Schr\"odinger equation.
 %     \item Implemented the ``shooting method'' to numerically find energy eigenstates for user-drefined potentials.
 % \end{jobcustomlong}
-\vspace{-1.5em}
+% \vspace{-1.5em}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+% \section{Projects}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
+
 %----------------------------------------------------------------------------------------
 %	PROGRAMMING
 %----------------------------------------------------------------------------------------
@@ -283,32 +303,13 @@
 %         \item FDM 3D printing
 %     \end{itemize}
 % \end{minipage}
-\section{Programming Skills}
+\section{Computational Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \textbf{Languages} & Python, C++, Bash/Zsh, JSON \\
 \textbf{Programs} & MATLAB, Mathematica, Microsoft Excel, SolidWorks \\
 \textbf{Markup} & \LaTeX, HTML, CSS, Markdown \\
-\textbf{Misc.} & Machine learning (Pytorch, scikit-learn), High performance computation (LUMI, S3DF, NERSC), Git, PGF/TikZ
+\textbf{Misc.} & Machine learning (Pytorch, scikit-learn), High performance computation (LUMI, S3DF, NERSC), Git, Slurm, PGF/TikZ
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
-% \section{Projects}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-% \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications and Preprints}\label{sec:publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	TALKS/PRESENTATIONS
